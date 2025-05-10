@@ -1,0 +1,14 @@
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+    <title>Informações do Candidato</title>
+    </head>
+    <body>
+    <p>Informações do Candidato</p> 
+
+    <form th:object="${pessoa}">
+    <p>Nome: <span th:text="${pessoa.nome}"></span></p>  
+    <p>Email: <span th:text="${pessoa.email}"></span></p> 
+    <p>Usuario: <span th:text="${pessoa.usuario}"></span></p> 
+    </form>
+    </body>
+</html>

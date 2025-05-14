@@ -26,7 +26,7 @@ public class CandidateController {
     public String signIn(RedirectAttributes redirectAttributes, String username, String password) {
 
         try {
-            this.candidateService.login(username, password);
+            var token = this.candidateService.login(username, password);
 
             return "candidate/profile";
 
@@ -36,5 +36,10 @@ public class CandidateController {
             redirectAttributes.addFlashAttribute("error_message", "Usuário/Senha incorretos");
             return "redirect:/candidate/login";
         }
+    }
+
+    @GetMapping("/profile")
+    public String profile() {
+        return "candidate/profile";
     }
 }

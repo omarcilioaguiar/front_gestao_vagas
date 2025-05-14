@@ -1,3 +1,4 @@
 /home/marcilio/Dropbox/Projetos/Publicos/front_gestao_vagas/src/main/java/br/com/marcilioaguiar/front_gestao_vagas/FrontGestaoVagasApplication.java
 /home/marcilio/Dropbox/Projetos/Publicos/front_gestao_vagas/src/main/java/br/com/marcilioaguiar/front_gestao_vagas/modules/candidate/controller/CandidateController.java
+/home/marcilio/Dropbox/Projetos/Publicos/front_gestao_vagas/src/main/java/br/com/marcilioaguiar/front_gestao_vagas/modules/candidate/dto/Token.java
 /home/marcilio/Dropbox/Projetos/Publicos/front_gestao_vagas/src/main/java/br/com/marcilioaguiar/front_gestao_vagas/modules/candidate/service/CandidateService.java

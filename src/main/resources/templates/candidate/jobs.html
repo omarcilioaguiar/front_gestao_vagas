@@ -23,15 +23,22 @@
     </nav>
     <div class="container mx-auto mt-24 text-center">
         <form>
-            <input type="text" name="filter" placeholder="Digite a vaga" class="bg-gray-50 text-gray-500 rounded w-96 p-3
-            focus:outline-none" />
+            <input type="text" name="filter" class="bg-gray-50 text-gray-500 rounded w-96 p-3
+            focus:outline-none
+            " placeholder="Buscar vagas" />
 
-            <button class="bg-green-600 hover;bg-green-500 text-white w-24 p-3 ml-2 rounded">Buscar</button>
+            <button class="bg-green-600 hover:bg-green-500 text-white w-24 p-3 ml-2 rounded">Buscar</button>
         </form>
 
-        <div th:each="job: ${jobs}" class="text-white">
-            <h3 th:text="${job.description}"></h3>
-            <span th:text="${job.level}"></span>
+        <div class="max-w-md mx-auto mt-10">
+
+            <div th:each="job: ${jobs}" class="text-white bg-gray-800 rounded-lg p-4 mb-4 shadow-md text-justify">
+                <h3 th:text="${job.description}"></h3>
+                <span th:text="${job.level}" class="block"></span>
+                <span class="mt-4 block font-bold">Benefícios:</span>
+                <span th:text="${job.benefits}" class="block"></span>
+                <button class="bg-gray-500 hover:bg-gray-400 text-white font-bold py-2 px-4 rounded mt-4">Aplicar</button>
+            </div>
         </div>
     </div>
 </body>
